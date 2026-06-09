@@ -1,11 +1,21 @@
 extends CharacterBody2D
 
-var tamanho_tile = 32
-var duracao_movimento = 0.1
+var tamanho_tile = 16
+@export var duracao_movimento = 0.3
 
-var direcao = Vector2.ZERO
+# Converter as variáveis de Vector2 para Vector2i
+var direcao := Vector2i.ZERO
 var movendo = false
 
+# Acessar o TileMapLayer e a posição no tabuleiro do jogador
+@export var grade_fase : TileMapLayer
+var posicao_grid = Vector2i.ZERO
+
+func _ready() -> void:
+	# Pegamos qual casa mais próxima do centro do jogador e depois movemos o jogador para a posição especifica dessa casa
+	posicao_grid = grade_fase.local_to_map(position)
+	position = grade_fase.map_to_local(posicao_grid)
+	
 func _physics_process(delta: float) -> void:
 	
 	mover_grid()
@@ -19,17 +29,46 @@ func mover_grid():
 		
 	direcao = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 		
-	if direcao == Vector2.ZERO:
+	if direcao == Vector2i.ZERO:
 		return
+	
+	if direcao.x != 0 and direcao.y != 0:
+		direcao = Vector2i(sign(direcao.x), 0)
 		
-	var posicao_final = position + (direcao*tamanho_tile)
+	# Onde o jogador está agora
+	posicao_grid = grade_fase.local_to_map(position)
+	
+	# Calcular para onde ele vai se mover
+	var coordenadas_final = posicao_grid + direcao
+	
+	# Coletar o bloco para onde estamos nos movendo
+	var proximo_bloco = grade_fase.get_cell_tile_data(coordenadas_final)
+	
+	# Se o proximo bloco for nulo, encerrar a função
+	if proximo_bloco == null:
+		return
+	
+	# Se o proximo bloco for Blocked, encerrar a função
+	if proximo_bloco.get_custom_data("Blocked") == true:
+		return
+	
+	var posicao_final = grade_fase.map_to_local(coordenadas_final)
 	
 	var movimento_tween = create_tween()
 	
 	movimento_tween.tween_property(self,"position", posicao_final, duracao_movimento)
+	
+	#var scale_tween = create_tween()
+	#if direcao.x != 0:
+		#scale_tween.tween_property(self, "scale", Vector2(1.2,0.8), 0.15)
+	#else:
+		#scale_tween.tween_property(self, "scale", Vector2(0.8,1.2), 0.15)
+	#scale_tween.tween_property(self, "scale", Vector2(1,1), 0.15)
 	
 	movendo = true
 	
 	await movimento_tween.finished
 	
 	movendo = false
+	
+	
