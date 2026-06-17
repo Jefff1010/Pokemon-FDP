@@ -1,7 +1,9 @@
 [gd_scene format=4 uid="uid://cj5sklykw6y7k"]
 
 [ext_resource type="Texture2D" uid="uid://dgds5a42s80c2" path="res://Assets/Game Boy Advance - Pokemon FireRed _ LeafGreen - Maps (Towns, Buildings, Etc.) - Viridian City.png" id="1_efvij"]
+[ext_resource type="Script" uid="uid://c0x52iqp4bfl2" path="res://mom's_house.gd" id="1_l0ond"]
 [ext_resource type="PackedScene" uid="uid://b0615k6kma3a0" path="res://jogador.tscn" id="2_ra87t"]
+[ext_resource type="Script" uid="uid://hmn17oerdlqf" path="res://sair_da_casa.gd" id="3_45qiq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ra87t"]
 texture = ExtResource("1_efvij")
@@ -1929,12 +1931,18 @@ margins = Vector2i(16, 29)
 50:22/0 = 0
 51:22/0 = 0
 52:22/0 = 0
+52:22/0/custom_data_0 = true
 53:22/0 = 0
 54:22/0 = 0
+54:22/0/custom_data_0 = true
 55:22/0 = 0
+55:22/0/custom_data_0 = true
 56:22/0 = 0
+56:22/0/custom_data_0 = true
 57:22/0 = 0
+57:22/0/custom_data_0 = true
 58:22/0 = 0
+58:22/0/custom_data_0 = true
 59:22/0 = 0
 60:22/0 = 0
 61:22/0 = 0
@@ -2009,18 +2017,25 @@ margins = Vector2i(16, 29)
 45:23/0 = 0
 46:23/0 = 0
 47:23/0 = 0
+47:23/0/custom_data_0 = true
 48:23/0 = 0
+48:23/0/custom_data_0 = true
 49:23/0 = 0
+49:23/0/custom_data_0 = true
 50:23/0 = 0
+50:23/0/custom_data_0 = true
 51:23/0 = 0
+51:23/0/custom_data_0 = true
 52:23/0 = 0
 53:23/0 = 0
+53:23/0/custom_data_0 = true
 54:23/0 = 0
 55:23/0 = 0
 56:23/0 = 0
 57:23/0 = 0
 58:23/0 = 0
 59:23/0 = 0
+59:23/0/custom_data_0 = true
 60:23/0 = 0
 61:23/0 = 0
 62:23/0 = 0
@@ -2094,6 +2109,7 @@ margins = Vector2i(16, 29)
 45:24/0 = 0
 46:24/0 = 0
 47:24/0 = 0
+47:24/0/custom_data_0 = true
 48:24/0 = 0
 49:24/0 = 0
 50:24/0 = 0
@@ -2106,6 +2122,7 @@ margins = Vector2i(16, 29)
 57:24/0 = 0
 58:24/0 = 0
 59:24/0 = 0
+59:24/0/custom_data_0 = true
 60:24/0 = 0
 61:24/0 = 0
 62:24/0 = 0
@@ -2179,6 +2196,7 @@ margins = Vector2i(16, 29)
 45:25/0 = 0
 46:25/0 = 0
 47:25/0 = 0
+47:25/0/custom_data_0 = true
 48:25/0 = 0
 49:25/0 = 0
 50:25/0 = 0
@@ -2191,6 +2209,7 @@ margins = Vector2i(16, 29)
 57:25/0 = 0
 58:25/0 = 0
 59:25/0 = 0
+59:25/0/custom_data_0 = true
 60:25/0 = 0
 61:25/0 = 0
 62:25/0 = 0
@@ -2264,18 +2283,22 @@ margins = Vector2i(16, 29)
 45:26/0 = 0
 46:26/0 = 0
 47:26/0 = 0
+47:26/0/custom_data_0 = true
 48:26/0 = 0
 49:26/0 = 0
 50:26/0 = 0
 51:26/0 = 0
 52:26/0 = 0
 53:26/0 = 0
+53:26/0/custom_data_0 = true
 54:26/0 = 0
+54:26/0/custom_data_0 = true
 55:26/0 = 0
 56:26/0 = 0
 57:26/0 = 0
 58:26/0 = 0
 59:26/0 = 0
+59:26/0/custom_data_0 = true
 60:26/0 = 0
 61:26/0 = 0
 62:26/0 = 0
@@ -2349,6 +2372,7 @@ margins = Vector2i(16, 29)
 45:27/0 = 0
 46:27/0 = 0
 47:27/0 = 0
+47:27/0/custom_data_0 = true
 48:27/0 = 0
 49:27/0 = 0
 50:27/0 = 0
@@ -2361,6 +2385,7 @@ margins = Vector2i(16, 29)
 57:27/0 = 0
 58:27/0 = 0
 59:27/0 = 0
+59:27/0/custom_data_0 = true
 60:27/0 = 0
 61:27/0 = 0
 62:27/0 = 0
@@ -2434,7 +2459,9 @@ margins = Vector2i(16, 29)
 45:28/0 = 0
 46:28/0 = 0
 47:28/0 = 0
+47:28/0/custom_data_0 = true
 48:28/0 = 0
+48:28/0/custom_data_0 = true
 49:28/0 = 0
 50:28/0 = 0
 51:28/0 = 0
@@ -2445,7 +2472,9 @@ margins = Vector2i(16, 29)
 56:28/0 = 0
 57:28/0 = 0
 58:28/0 = 0
+58:28/0/custom_data_0 = true
 59:28/0 = 0
+59:28/0/custom_data_0 = true
 60:28/0 = 0
 61:28/0 = 0
 62:28/0 = 0
@@ -2519,18 +2548,24 @@ margins = Vector2i(16, 29)
 45:29/0 = 0
 46:29/0 = 0
 47:29/0 = 0
+47:29/0/custom_data_0 = true
 48:29/0 = 0
+48:29/0/custom_data_0 = true
 49:29/0 = 0
 50:29/0 = 0
 51:29/0 = 0
+51:29/0/custom_data_0 = true
 52:29/0 = 0
 53:29/0 = 0
+53:29/0/custom_data_0 = true
 54:29/0 = 0
 55:29/0 = 0
 56:29/0 = 0
 57:29/0 = 0
 58:29/0 = 0
+58:29/0/custom_data_0 = true
 59:29/0 = 0
+59:29/0/custom_data_0 = true
 60:29/0 = 0
 61:29/0 = 0
 62:29/0 = 0
@@ -2605,16 +2640,27 @@ margins = Vector2i(16, 29)
 46:30/0 = 0
 47:30/0 = 0
 48:30/0 = 0
+48:30/0/custom_data_0 = true
 49:30/0 = 0
+49:30/0/custom_data_0 = true
 50:30/0 = 0
+50:30/0/custom_data_0 = true
 51:30/0 = 0
+51:30/0/custom_data_0 = true
 52:30/0 = 0
+52:30/0/custom_data_0 = true
 53:30/0 = 0
+53:30/0/custom_data_0 = true
 54:30/0 = 0
+54:30/0/custom_data_0 = true
 55:30/0 = 0
+55:30/0/custom_data_0 = true
 56:30/0 = 0
+56:30/0/custom_data_0 = true
 57:30/0 = 0
+57:30/0/custom_data_0 = true
 58:30/0 = 0
+58:30/0/custom_data_0 = true
 59:30/0 = 0
 60:30/0 = 0
 61:30/0 = 0
@@ -3578,16 +3624,120 @@ margins = Vector2i(16, 29)
 84:41/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_45qiq"]
+physics_layer_0/collision_layer = 1
+terrain_set_0/mode = 0
+custom_data_layer_0/name = "Blocked"
+custom_data_layer_0/type = 1
+custom_data_layer_1/name = ""
+custom_data_layer_1/type = 0
 sources/0 = SubResource("TileSetAtlasSource_ra87t")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ra87t"]
+size = Vector2(22, 8)
+
+[sub_resource type="Animation" id="Animation_lcdt4"]
+resource_name = "FadeIn"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FadeIn:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mowh7"]
+resource_name = "FadeInPosMenu"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FadeInPosMenu:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_45qiq"]
+resource_name = "FadeOut"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FadeOutt:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_l0ond"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FadeOutt:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FadeIn:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("FadeInPosMenu:color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lcdt4"]
+_data = {
+&"FadeIn": SubResource("Animation_lcdt4"),
+&"FadeInPosMenu": SubResource("Animation_mowh7"),
+&"FadeOut": SubResource("Animation_45qiq"),
+&"RESET": SubResource("Animation_l0ond")
+}
+
 [node name="Node2D" type="Node2D" unique_id=926302869]
+script = ExtResource("1_l0ond")
 metadata/_edit_horizontal_guides_ = [160.0]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1752545981]
-offset_left = 357.0
-offset_top = 116.0
-offset_right = 786.0
-offset_bottom = 409.0
+offset_left = 224.0
+offset_top = 76.0
+offset_right = 953.0
+offset_bottom = 449.0
+mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1756354918]
@@ -3596,7 +3746,7 @@ tile_map_data = PackedByteArray("AAAeAAwAAAAwABYAAAAeAA0AAAAwABcAAAAeAA4AAAAwABg
 tile_set = SubResource("TileSet_45qiq")
 
 [node name="Jogador" parent="." unique_id=1656359202 node_paths=PackedStringArray("grade_fase") instance=ExtResource("2_ra87t")]
-position = Vector2(568, 237)
+position = Vector2(552, 301)
 grade_fase = NodePath("../TileMapLayer")
 
 [node name="Camera2D" type="Camera2D" parent="Jogador" unique_id=582177478]
@@ -3604,3 +3754,42 @@ position = Vector2(0, -2)
 zoom = Vector2(4, 4)
 limit_left = 160
 limit_top = 160
+
+[node name="SairDaCasa" type="Area2D" parent="." unique_id=324353767]
+script = ExtResource("3_45qiq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SairDaCasa" unique_id=1551074898]
+position = Vector2(552, 315)
+shape = SubResource("RectangleShape2D_ra87t")
+debug_color = Color(0.98503464, 0, 0.34232423, 0.41960785)
+
+[node name="FadeOut" type="AnimationPlayer" parent="." unique_id=2079489377]
+libraries/ = SubResource("AnimationLibrary_lcdt4")
+
+[node name="FadeOutt" type="ColorRect" parent="." unique_id=1115967327]
+offset_left = 46.0
+offset_top = -50.0
+offset_right = 1164.0
+offset_bottom = 565.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="FadeIn" type="ColorRect" parent="." unique_id=569144845]
+visible = false
+offset_left = 199.0
+offset_top = 54.0
+offset_right = 1068.0
+offset_bottom = 548.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="FadeInPosMenu" type="ColorRect" parent="." unique_id=8345731]
+offset_left = 34.0
+offset_top = 26.0
+offset_right = 1275.0
+offset_bottom = 638.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[connection signal="body_entered" from="SairDaCasa" to="SairDaCasa" method="_on_body_entered"]
+[connection signal="animation_finished" from="FadeOut" to="SairDaCasa" method="_on_fade_out_animation_finished"]

@@ -1,86 +1,90 @@
 [gd_scene format=3 uid="uid://b0615k6kma3a0"]
 
 [ext_resource type="Script" uid="uid://vphjekurv20e" path="res://jogador.gd" id="1_q2130"]
-[ext_resource type="Texture2D" uid="uid://dfplsowsu46ds" path="res://Assets/Sprites Pokemon.png" id="2_c2wt1"]
+[ext_resource type="Texture2D" uid="uid://bk4c7mrixq220" path="res://Assets/_gen_3_sprite_style__operario_worker_by_tonitur20_by_tonitur20_dd79mqt.png" id="2_c2wt1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c2wt1"]
-size = Vector2(21, 20)
+size = Vector2(17, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q2130"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(87, 5, 49, 58)
+region = Rect2(0, 144, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4obgb"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(87, 179, 49, 58)
+region = Rect2(0, 96, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j3kwt"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(87, 121, 49, 58)
+region = Rect2(0, 48, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xswob"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(87, 63, 49, 58)
+region = Rect2(0, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_82vy7"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(136, 5, 49, 58)
+region = Rect2(32, 144, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kdflp"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(87, 5, 49, 58)
+region = Rect2(64, 144, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t76xg"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(185, 5, 49, 58)
+region = Rect2(96, 144, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rrcy7"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(87, 5, 49, 58)
+region = Rect2(0, 144, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_525fe"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(136, 179, 49, 58)
+region = Rect2(32, 96, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4isjh"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(87, 179, 49, 58)
+region = Rect2(64, 96, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7t2by"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(185, 179, 49, 58)
+region = Rect2(96, 96, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eygob"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(87, 179, 49, 58)
+region = Rect2(0, 96, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oo3fu"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(136, 121, 49, 58)
+region = Rect2(32, 48, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ek3e7"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(87, 121, 49, 58)
+region = Rect2(64, 48, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_745sd"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(185, 121, 49, 58)
+region = Rect2(96, 48, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_76t8p"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(87, 121, 49, 58)
+region = Rect2(0, 48, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kuwhl"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(136, 63, 49, 58)
+region = Rect2(32, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0xehm"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(87, 63, 49, 58)
+region = Rect2(64, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k6t5q"]
 atlas = ExtResource("2_c2wt1")
-region = Rect2(185, 63, 49, 58)
+region = Rect2(96, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sqpra"]
+atlas = ExtResource("2_c2wt1")
+region = Rect2(0, 0, 32, 48)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sqpra"]
 animations = [{
@@ -178,7 +182,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_k6t5q")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_0xehm")
+"texture": SubResource("AtlasTexture_sqpra")
 }],
 "loop": true,
 "name": &"Walk Front",
@@ -195,8 +199,7 @@ shape = SubResource("RectangleShape2D_c2wt1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1326106570]
 texture_filter = 5
 position = Vector2(0, -2.7999997)
-scale = Vector2(0.4, 0.37241378)
+scale = Vector2(0.45, 0.419)
 sprite_frames = SubResource("SpriteFrames_sqpra")
-animation = &"Walk Direita"
-frame = 3
-frame_progress = 0.8537771
+animation = &"Idle Front"
+frame_progress = 0.8169169

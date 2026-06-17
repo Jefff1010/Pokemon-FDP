@@ -92,3 +92,7 @@ func mover_grid():
 	movendo = false
 	
 	
+
+
+func _on_sair_da_casa_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
