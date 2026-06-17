@@ -200,6 +200,3 @@ sprite_frames = SubResource("SpriteFrames_sqpra")
 animation = &"Walk Direita"
 frame = 3
 frame_progress = 0.8537771
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1555385808]
-zoom = Vector2(4, 4)

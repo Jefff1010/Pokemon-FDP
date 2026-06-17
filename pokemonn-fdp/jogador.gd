@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+var facing_dir = Vector2i.ZERO
 var tamanho_tile = 16
 @export var duracao_movimento = 0.3
 
@@ -20,11 +20,31 @@ func _physics_process(delta: float) -> void:
 	
 	mover_grid()
 	
+	atualizar_animacao()
 	move_and_slide()
+
+func atualizar_animacao():
+	if facing_dir == Vector2i.UP and movendo == true:
+		$AnimatedSprite2D.play("Walk Back")
+	elif facing_dir == Vector2i.DOWN and movendo == true:
+		$AnimatedSprite2D.play("Walk Front")
+	elif facing_dir == Vector2i.RIGHT and movendo == true:
+		$AnimatedSprite2D.play("Walk Direita")
+	elif facing_dir == Vector2i.LEFT and movendo == true:
+		$AnimatedSprite2D.play("Walk Esquerda")
+	elif facing_dir == Vector2i.UP and movendo == false:
+		$AnimatedSprite2D.play("Idle Back")
+	elif facing_dir == Vector2i.DOWN and movendo == false:
+		$AnimatedSprite2D.play("Idle Front")
+	elif facing_dir == Vector2i.LEFT and movendo == false:
+		$AnimatedSprite2D.play("Idle Esquerda")
+	elif facing_dir == Vector2i.RIGHT and movendo == false:
+		$AnimatedSprite2D.play("Idle Direita")
 
 func mover_grid():
 	
 	if movendo == true:
+		facing_dir = direcao
 		return
 		
 	direcao = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
