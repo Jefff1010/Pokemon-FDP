@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://qkcl3xakbo6v" path="res://Assets/Game Boy Advance - Pokemon FireRed _ LeafGreen - Maps (Caves, Forests, Oceans, Etc.) - Canyon Entrance.png" id="2_qcukj"]
 [ext_resource type="PackedScene" uid="uid://b0615k6kma3a0" path="res://jogador.tscn" id="2_udkue"]
 [ext_resource type="Script" uid="uid://b3wfk472ryo0b" path="res://entrar_na_casa.gd" id="5_v5c45"]
+[ext_resource type="AudioStream" uid="uid://deg2sqekdeqa" path="res://Assets/1-50. Fuchsia City.mp3" id="6_vyao0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v5c45"]
 texture = ExtResource("1_udkue")
@@ -5369,6 +5370,7 @@ limit_bottom = 640
 libraries/ = SubResource("AnimationLibrary_v5c45")
 
 [node name="FadeIn" type="ColorRect" parent="." unique_id=46642814]
+visible = false
 offset_left = 128.0
 offset_top = 59.0
 offset_right = 780.0
@@ -5389,6 +5391,13 @@ script = ExtResource("5_v5c45")
 position = Vector2(472, 251)
 shape = SubResource("RectangleShape2D_qcukj")
 debug_color = Color(0.8466149, 0, 0.23826021, 0.41960785)
+
+[node name="CenterTown" type="AudioStreamPlayer2D" parent="." unique_id=870374235]
+position = Vector2(283, 365)
+stream = ExtResource("6_vyao0")
+autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=689461801]
 
 [connection signal="animation_finished" from="AnimationPlayer" to="EntrarNaCasa" method="_on_animation_player_animation_finished"]
 [connection signal="body_entered" from="EntrarNaCasa" to="EntrarNaCasa" method="_on_body_entered"]

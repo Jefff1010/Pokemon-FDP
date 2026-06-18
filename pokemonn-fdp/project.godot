@@ -15,10 +15,18 @@ run/main_scene="uid://ctuskpi8nb2hm"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*uid://djk316kbf24yj"
+
 [display]
 
 window/size/mode=3
 window/stretch/mode="canvas_items"
+
+[global_group]
+
+Trainer=""
 
 [physics]
 

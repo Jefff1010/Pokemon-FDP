@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://c0x52iqp4bfl2" path="res://mom's_house.gd" id="1_l0ond"]
 [ext_resource type="PackedScene" uid="uid://b0615k6kma3a0" path="res://jogador.tscn" id="2_ra87t"]
 [ext_resource type="Script" uid="uid://hmn17oerdlqf" path="res://sair_da_casa.gd" id="3_45qiq"]
+[ext_resource type="AudioStream" uid="uid://c4cundds7tesh" path="res://Assets/1-08. Professor Oak's Laboratory.mp3" id="5_lcdt4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ra87t"]
 texture = ExtResource("1_efvij")
@@ -3790,6 +3791,10 @@ offset_right = 1275.0
 offset_bottom = 638.0
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
+
+[node name="Mom\'s House" type="AudioStreamPlayer2D" parent="." unique_id=1175588875]
+position = Vector2(177, 322)
+stream = ExtResource("5_lcdt4")
 
 [connection signal="body_entered" from="SairDaCasa" to="SairDaCasa" method="_on_body_entered"]
 [connection signal="animation_finished" from="FadeOut" to="SairDaCasa" method="_on_fade_out_animation_finished"]
