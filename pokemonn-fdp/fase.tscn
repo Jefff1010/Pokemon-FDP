@@ -5370,7 +5370,6 @@ limit_bottom = 640
 libraries/ = SubResource("AnimationLibrary_v5c45")
 
 [node name="FadeIn" type="ColorRect" parent="." unique_id=46642814]
-visible = false
 offset_left = 128.0
 offset_top = 59.0
 offset_right = 780.0
